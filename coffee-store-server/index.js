@@ -9,8 +9,8 @@ const port = process.env.POST || 3000;
 app.use(cors())
 app.use(express.json())
 
-const uri =
-  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.tju8ptc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.tju8ptc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -30,6 +30,22 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
+
+    const coffeesCollections = client.db('coffeeDB').collection('coffees');
+
+    app.get('/coffees', async(req, res) => {
+      const cursor = coffeesCollections.find();
+      const result = await cursor.toArray();
+      res.send(result);
+    })
+
+    app.post('/coffees', async (req, res) => {
+      const newCoffee = req.body;
+      console.log(newCoffee);
+      const result = await coffeesCollections.insertOne(newCoffee);
+      res.send(result);
+    })
+
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close(); //This running server at once but we need to run it persistently

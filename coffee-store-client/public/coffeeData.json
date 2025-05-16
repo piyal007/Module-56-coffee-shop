@@ -1,0 +1,64 @@
+{
+    "coffeeProducts": [
+        {
+            "id": 1,
+            "name": "Midnight Bloom",
+            "chef": "Chef Élodie Dubois",
+            "supplier": "The Bean Baron Imports",
+            "taste": "Silky Embrace",
+            "category": "Single Origin",
+            "details": "Rich dark roast with floral notes - the perfect evening companion.",
+            "image": "https://i.postimg.cc/htNBBSsg/1.png"
+        },
+        {
+            "id": 2,
+            "name": "Sunrise Ember",
+            "chef": "Chef Kenji Tanaka",
+            "supplier": "Aromatic Ascent Coffee Co.",
+            "taste": "Vibrant Zing",
+            "category": "Blends",
+            "details": "Zesty morning blend that energizes your day.",
+            "image": "https://i.postimg.cc/P5Cj9Lm2/2.png"
+        },
+        {
+            "id": 3,
+            "name": "Velvet Dusk",
+            "chef": "Chef Isabella Rossi",
+            "supplier": "Global Grind Distributors",
+            "taste": "Warm Velvet Caress",
+            "category": "Espresso Drinks",
+            "details": "Smooth espresso blend perfect for luxurious lattes and cappuccinos.",
+            "image": "https://i.postimg.cc/q7ndB9DK/3.png"
+        },
+        {
+            "id": 4,
+            "name": "Mountain Majesty",
+            "chef": "Chef Omar Hassan",
+            "supplier": "Ember & Earth Provisions",
+            "taste": "Bold Awakening Rush",
+            "category": "Brewing Methods",
+            "details": "Bold French Press coffee with intense earthy notes.",
+            "image": "https://i.postimg.cc/Kz2h1JCH/4.png"
+        },
+        {
+            "id": 5,
+            "name": "Coastal Breeze Brew",
+            "chef": "Chef Anya Petrova",
+            "supplier": "Crimson Cup Collective",
+            "taste": "Mellow Serenity Sip",
+            "category": "Decaffeinated",
+            "details": "Light, balanced decaf for anytime enjoyment.",
+            "image": "https://i.postimg.cc/Jn5VZjL4/5.png"
+        },
+        {
+            "id": 6,
+            "name": "Hazelnut Harmony Brew",
+            "chef": "Chef Jaxon Riley",
+            "supplier": "The Daily Drip Supply",
+            "taste": "Lingering Sweet Whisper",
+            "category": "Flavored Coffee",
+            "details": "Smooth hazelnut-flavored coffee with a sweet finish.",
+            "image": "https://i.postimg.cc/D0fVgmvQ/6.png"
+        }
+    ]
+}
